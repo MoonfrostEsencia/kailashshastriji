@@ -43,7 +43,7 @@ const Trust = () => {
           <div>
             <YXtransition x={-40}>
           <h4
-  className="lg:text-[34px] text-[14px] font-semibold mb-10 lg:ml-4 ml-2"
+  className="lg:text-[34px] text-[19px] font-semibold mb-10 lg:ml-4 ml-2"
 >
   अपनी समस्याओं का समाधान आज ही प्राप्त करें। Call Now पर क्लिक करें{" "}
   <span className="text-gray-500"> <br/>या Book Appointment पर क्लिक करके अपने अपॉइंटमेंट को शेड्यूल करें!</span>
