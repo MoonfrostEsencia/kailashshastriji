@@ -51,10 +51,21 @@ const Trust = () => {
 
             </YXtransition>
               <YXtransition x={-40} delay={0.4}>
-                <div className="flex gap-4">
-                <Button type="button" href="https://calendly.com/panditkailashshastriji-o/30min" title="Book Appointment" />
-                <Button type="button" href="tel:7357565986" title="Call Now" />
-              </div>
+              <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+  <Button
+    type="button"
+    href="https://calendly.com/panditkailashshastriji-o/30min"
+    title="Book Appointment"
+    className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6"
+  />
+  <Button
+    type="button"
+    href="tel:7357565986"
+    title="Call Now"
+    className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-6"
+  />
+</div>
+
               </YXtransition>
             
           </div>
