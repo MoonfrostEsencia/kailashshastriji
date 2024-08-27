@@ -39,7 +39,7 @@ const Trust = () => {
     </section>
     <section className={style.section}>
       <MaxWidthWrapper>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-6 place-items-center">
           <div>
             <YXtransition x={-40}>
             <h4
