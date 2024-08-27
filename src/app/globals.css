@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --primary-200: #F7F7FC;
+    --gradient-1: 188,79%,70%;
+    --gradient-2: 283,62%,86%;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+.bg-primary-200 {
+  background-color:  var(--primary-200);
+}
+
+.gradient-1 {
+  background-color: var(--gradient-1);
+}
+
+.gradient-2 {
+  background-color: var(--gradient-2);
+}
+
+.hscroll-line {
+  @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] 
+  -translate-y-[50%] md:h-[2.5px] h-[2px] absolute overflow-hidden md:w-[45px] w-[40px] rotate-[90deg];
+  transform-origin: 50% 50%;
+}
+
+.hscroll-line::before,
+.hscroll-line::after {
+  @apply absolute top-0 left-0 right-0 bottom-0 content-['']
+}
+
+.hscroll-line:before {
+  @apply bg-gray-400;
+}
+
+.hscroll-line::after {
+	background: black;
+	animation: move 2s infinite linear;
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
+}
+
+@-webkit-keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
+}
+
+/* Scroller */
+
+.scroller-box[data-animated="true"] .scroller-list {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 300s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+      transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@-webkit-keyframes scroll {
+  to {
+      transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+ /* Text anim */
+ 
+.fade-in-up {
+  animation: fadeInUp 5s ease;
+}
+
+.navbar li span::before { @apply absolute top-[100%] content-[attr(data-hover)]; }
+
+.navbar li:hover span, .navbar li:focus span {
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+
+/* Swiper */
+
+.slick-list {
+  margin: 0 -7px;
+}
+
+.slick-slide > div {
+  padding: 0 10px;
+}
+
+
