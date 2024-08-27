@@ -46,7 +46,7 @@ const Trust = () => {
   className="lg:text-[34px] text-[14px] font-semibold mb-10 lg:ml-4 ml-2"
 >
   अपनी समस्याओं का समाधान आज ही प्राप्त करें। Call Now पर क्लिक करें{" "}
-  <span className="text-gray-500">या Book Appointment पर क्लिक करके अपने अपॉइंटमेंट को शेड्यूल करें!</span>
+  <span className="text-gray-500"> <br/>या Book Appointment पर क्लिक करके अपने अपॉइंटमेंट को शेड्यूल करें!</span>
 </h4>
 
             </YXtransition>
