@@ -42,12 +42,13 @@ const Trust = () => {
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-6 place-items-center">
           <div>
             <YXtransition x={-40}>
-            <h4
-              className="lg:text-[34px] text-[14px] font-semibold mb-10"
-            >
-              अपनी समस्याओं का समाधान आज ही प्राप्त करें। Call Now पर क्लिक करें  {" "}
-              <span className="text-gray-500"> या Book Appointment पर क्लिक करके अपने अपॉइंटमेंट को शेड्यूल करें!</span>
-            </h4>
+          <h4
+  className="lg:text-[34px] text-[14px] font-semibold mb-10 lg:ml-4 ml-2"
+>
+  अपनी समस्याओं का समाधान आज ही प्राप्त करें। Call Now पर क्लिक करें{" "}
+  <span className="text-gray-500">या Book Appointment पर क्लिक करके अपने अपॉइंटमेंट को शेड्यूल करें!</span>
+</h4>
+
             </YXtransition>
               <YXtransition x={-40} delay={0.4}>
                 <div className="flex gap-4">
