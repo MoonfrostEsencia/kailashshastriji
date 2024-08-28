@@ -14,10 +14,11 @@ export default function Home() {
   return (
     <>
       <Hero />
+       <Portfolio />
       <Trust />
       <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
       <Services />
-      <Portfolio />
+     
       <Testimonial />
       <Faq></Faq>
       <CTA />
